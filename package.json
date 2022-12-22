@@ -1,5 +1,22 @@
 {
+  "name": "vite-react-ts-extended",
+  "version": "0.1.0",
+  "license": "MIT",
+  "msw": {
+    "workerDirectory": "."
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "test": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write ."
+  },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
@@ -11,6 +28,9 @@
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "@vitejs/plugin-react": "^3.0.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.1",
@@ -26,8 +46,5 @@
     "vite": "^3.2.4",
     "vitest": "^0.25.3",
     "whatwg-fetch": "^3.6.2"
-  },
-  "scripts": {
-    "prepare": "husky install"
   }
 }
